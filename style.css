@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 10px; 
+    font-family: "Red Hat Display", sans-serif; 
+}
+
+body {
+    font-size: 10px; 
+}
+
+/* Utility Classes */ 
+
+img {
+    width: 100%; 
+}
+
+.heading {
+    font-size: 3.2rem; 
+}
+
+.text-content {
+    text-align: center;
+    max-width: 45.7rem; 
+    margin-left: 2.4rem; 
+    margin-right: 2.4rem; 
+}
+
+.text-content > * + * {
+    margin-top: 2.4rem; 
+}
+
+.paragraph {
+    font-size: 1.6rem; 
+    line-height: 1.5; 
+}
+
+.gray {
+    color:rgb(120, 120, 120); 
+}
+
+.purple {
+    background: rgb(133, 95, 177); 
+}
+
+.blue {
+    background: rgb(77, 150, 168); 
+}
+
+.margin-top > * + * {
+    margin-top: 4rem; 
+}
+
+/* Hero Section */ 
+
+.hero {
+    padding: 4rem 0; 
+    overflow: hidden; 
+    margin-bottom: 4rem; 
+}
+
+.logo {
+    width: 12rem; 
+    margin: 0 auto; 
+}
+
+.faces {
+    width: 110%; 
+    transform: translatex(-5%)
+}
+
+.image {
+    display: none; 
+}
+
+.button-container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+}
+
+button {
+    padding: 1.5rem 2rem; 
+    border-radius: 30px; 
+    border: none; 
+    font-size: 1.4rem; 
+    color: white; 
+    transition: all .2s ease; 
+    cursor: pointer;
+}
+
+button.purple {
+    background: rgb(133, 95, 177); 
+}
+
+button.purple:hover {
+    background: rgb(217, 184, 255); 
+}
+
+button.blue {
+    background: rgb(77, 150, 168); 
+}
+button.blue:hover {
+    background: rgb(143, 227, 249); 
+}
+
+
+/* Section One */ 
+
+.content {
+    padding: 0 2.4rem; 
+}
+
+.vert-line {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical {
+    width: 1px; 
+    background-color: rgba(120, 120, 120, .2);
+    height: 8.4rem; 
+}
+
+.number {
+    font-size: 1.6rem; 
+    border-radius: 50%; 
+    border: 1px solid rgba(120, 120, 120, .2); 
+    width: 56px; 
+    height: 56px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem; 
+}
+
+.grid img {
+    border-radius: 1rem; 
+}
+
+.sub-heading {
+    font-size: 1.6rem; 
+    color: rgb(77, 150, 168); 
+    text-transform: uppercase;
+    letter-spacing: .4rem; 
+    font-weight: 700; 
+}
+
+/* Footer Styling */ 
+
+footer {
+    margin-top: 4rem; 
+    width: 100%; 
+}
+
+footer .vert-line {
+    transform: translateY(2.8rem); 
+    position: relative; 
+    z-index: 10; 
+}
+
+footer .number {
+    background-color: white;
+}
+
+footer .text-content .paragraph, footer .text-content .heading {
+    color: white; 
+    position: relative; 
+    z-index: 5; 
+}
+
+footer .text-content {
+    padding: 6rem 2.4rem;     
+    background-color: rgba(77, 150, 168, .5); 
+    background-image: url("assets/mobile/image-footer.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    position: relative; 
+    margin: 0; 
+    max-width: 57.3rem; 
+}
+
+.background {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 100%; 
+    width: 100%; 
+    background: rgba(77, 150, 168, .8); 
+}
+
+footer .text-content h2 {
+    color: white; 
+    position: relative; 
+    z-index: 5; 
+}
+
+footer button {
+    position: relative; 
+    z-index: 5; 
+    font-weight: 700; 
+}
+
+footer button span {
+    color: rgb(220, 220, 220); 
+}
+
+@media screen and (min-width: 460px) {
+    .text-container {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-container {
+        flex-direction: row; 
+        justify-content: center;
+    }
+    .hero .heading {
+        font-size: 4.8rem; 
+    }
+    .content {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .text-content {
+        max-width: 57.3rem; 
+    }
+    .content .text-content .heading {
+        max-width: 44.5rem; 
+        font-size: 4rem; 
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+    footer .text-content {
+        max-width: 100%; 
+    }
+    footer .text-content .paragraph {
+        max-width: 57.3rem; 
+        margin-right: auto;
+        margin-left: auto; 
+    }
+    footer .text-content .heading {
+        font-size: 4rem; 
+        max-width: 47.3rem; 
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+}
+@media screen and (min-width: 630px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 1110px) {
+    .faces {
+        display: none; 
+    }
+    .image {
+        display: block; 
+    }
+    .paragraph {
+        font-size: 1.8rem; 
+    }
+    .hero .text-container {
+        display: flex; 
+        flex-direction: row;
+        margin-top: 7rem; 
+    }
+    .hero .text-content {
+        max-width: 54rem; 
+        flex-shrink: 0; 
+    }
+    .hero .text-content .heading {
+        font-size: 6.4rem; 
+    }
+    .hero .image:first-of-type {
+        align-self: flex-start; 
+        transform: translateX(-2rem); 
+    }
+    .hero .image:last-of-type {
+        align-self: flex-end; 
+        transform: translatex(2rem); 
+    }
+    .grid {
+        max-width: 111rem; 
+        margin-right: auto; 
+        margin-left: auto; 
+    }
+    footer .text-content {
+        max-width: 100%; 
+        background-image: url("assets/tablet/image-footer.jpg"); 
+        background-size: 100%; 
+        padding: 10rem 0; 
+    }
+    footer .footer-text {
+        display: flex; 
+        flex-direction: row; 
+        margin-right: auto; 
+        margin-left: auto; 
+        max-width: 111rem; 
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer .footer-text .heading {
+        max-width: 35rem; 
+        text-align: left; 
+        margin: 0; 
+    }
+    footer .footer-text .paragraph:first-of-type {
+        max-width: 35rem; 
+        text-align: left; 
+        margin: 0; 
+    }
+    .footer-text button {
+        margin-left: auto; 
+    }
+}
